@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "chathider",
+  "version": "${version}",
+  "name": "Chat Hider",
+  "description": "Hides the chat",
+  "authors": [
+    "Max Henkel"
+  ],
+  "license": "All Rights Reserved",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "de.maxhenkel.chathider.ChatHider"
+    ]
+  },
+  "mixins": [
+    "chathider.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": ">=${fabric_version}",
+    "minecraft": "${minecraft_dependency}",
+    "java": ">=17"
+  }
+}
